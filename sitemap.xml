@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <!-- Home page -->
+   <url>
+      <loc>https://uibayezid.github.io/uiux/</loc>
+      <lastmod>2025-05-10</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>1.0</priority>
+   </url>
+   <!-- Additional page (if you have more pages in the future) -->
+   <!-- Example of another page, like a blog or about page -->
+   <url>
+      <loc>https://uibayezid.github.io/uiux/about</loc>
+      <lastmod>2025-05-09</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <!-- Example of another page -->
+   <url>
+      <loc>https://uibayezid.github.io/uiux/contact</loc>
+      <lastmod>2025-05-08</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+</urlset>
