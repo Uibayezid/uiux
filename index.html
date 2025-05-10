@@ -50,27 +50,32 @@
 
     .mobile-designs {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       gap: 40px;
       padding-left: 120px;
       padding-right: 120px;
     }
 
-    .mobile-designs img {
+    .mobile-designs .mobile-app {
+      width: 100%;
       max-width: 100%;
+    }
+
+    .mobile-designs img {
+      width: 100%;
       height: auto;
-      max-width: 300px;
       border-radius: 10px;
     }
 
-    .mobile-designs .mobile-app {
-      flex: 0 0 100%;
-      margin-bottom: 20px;
+    .mobile-designs .mobile-app-large {
+      max-width: 100%;
+      margin-bottom: 40px;
     }
 
-    .mobile-designs .mobile-app-two {
-      flex: 0 0 48%;
+    .mobile-designs .mobile-app-small {
+      width: 48%;
+      max-width: 300px;
     }
 
     .website-designs {
@@ -146,19 +151,19 @@
   <section>
     <h2 style="text-align:center;">Mobile App Designs</h2>
     <div class="mobile-designs">
-      <div class="mobile-app">
+      <div class="mobile-app mobile-app-large">
         <img src="appdesign1.jpg" alt="Mobile App Design 1">
       </div>
-      <div class="mobile-app-two">
+      <div class="mobile-app mobile-app-small">
         <img src="appdesign2.jpeg" alt="Mobile App Design 2">
       </div>
-      <div class="mobile-app-two">
+      <div class="mobile-app mobile-app-small">
         <img src="appdesign3.jpeg" alt="Mobile App Design 3">
       </div>
-      <div class="mobile-app-two">
+      <div class="mobile-app mobile-app-small">
         <img src="appdesign4.jpeg" alt="Mobile App Design 4">
       </div>
-      <div class="mobile-app-two">
+      <div class="mobile-app mobile-app-small">
         <img src="appdesign5.jpg" alt="Mobile App Design 5">
       </div>
     </div>
