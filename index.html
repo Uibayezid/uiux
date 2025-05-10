@@ -29,6 +29,16 @@
 
     section {
       padding: 2rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.5s forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .profile-image {
@@ -40,10 +50,11 @@
 
     .mobile-designs {
       display: flex;
-      overflow-x: auto;
-      gap: 1rem;
-      margin-top: 2rem;
+      flex-wrap: wrap;
       justify-content: center;
+      gap: 40px;
+      padding-left: 120px;
+      padding-right: 120px;
     }
 
     .mobile-designs img {
@@ -53,17 +64,28 @@
       border-radius: 10px;
     }
 
+    .mobile-designs .mobile-app {
+      flex: 0 0 100%;
+      margin-bottom: 20px;
+    }
+
+    .mobile-designs .mobile-app-two {
+      flex: 0 0 48%;
+    }
+
     .website-designs {
       display: flex;
-      justify-content: center;
-      gap: 1rem;
+      justify-content: space-between;
+      gap: 20px;
       margin-top: 2rem;
+      padding-left: 120px;
+      padding-right: 120px;
     }
 
     .website-designs img {
       max-width: 100%;
       height: auto;
-      width: 200px;
+      width: 48%;
       border-radius: 10px;
     }
 
@@ -93,6 +115,15 @@
       text-decoration: underline;
     }
 
+    footer img {
+      border-radius: 50%; /* Making icons round */
+      transition: transform 0.3s ease;
+    }
+
+    footer img:hover {
+      transform: scale(1.1);
+    }
+
     .intro {
       text-align: center;
       margin-top: 2rem;
@@ -115,11 +146,21 @@
   <section>
     <h2 style="text-align:center;">Mobile App Designs</h2>
     <div class="mobile-designs">
-      <img src="appdesign1.jpg" alt="Mobile App Design 1">
-      <img src="appdesign2.jpeg" alt="Mobile App Design 2">
-      <img src="appdesign3.jpeg" alt="Mobile App Design 3">
-      <img src="appdesign4.jpeg" alt="Mobile App Design 4">
-      <img src="appdesign5.jpg" alt="Mobile App Design 5">
+      <div class="mobile-app">
+        <img src="appdesign1.jpg" alt="Mobile App Design 1">
+      </div>
+      <div class="mobile-app-two">
+        <img src="appdesign2.jpeg" alt="Mobile App Design 2">
+      </div>
+      <div class="mobile-app-two">
+        <img src="appdesign3.jpeg" alt="Mobile App Design 3">
+      </div>
+      <div class="mobile-app-two">
+        <img src="appdesign4.jpeg" alt="Mobile App Design 4">
+      </div>
+      <div class="mobile-app-two">
+        <img src="appdesign5.jpg" alt="Mobile App Design 5">
+      </div>
     </div>
   </section>
 
@@ -128,6 +169,8 @@
     <div class="website-designs">
       <img src="webdesign1.png" alt="Website Design 1">
       <img src="webdesign2.png" alt="Website Design 2">
+    </div>
+    <div class="website-designs">
       <img src="webdesign3.png" alt="Website Design 3">
       <img src="webdesign4.png" alt="Website Design 4">
     </div>
@@ -145,13 +188,13 @@
       <p><strong>Connect with me:</strong></p>
       <div class="contact-links">
         <a href="https://wa.me/+8801731559563" target="_blank">
-          <img src="whatsapp.png" alt="WhatsApp" class="round-logo" width="40" height="40">
+          <img src="whatsapp.png" alt="WhatsApp" width="40" height="40">
         </a>
         <a href="https://www.fiverr.com" target="_blank">
-          <img src="fiverr.png" alt="Fiverr" class="round-logo" width="40" height="40">
+          <img src="fiverr.png" alt="Fiverr" width="40" height="40">
         </a>
         <a href="https://www.instagram.com/dark_knight_ttt" target="_blank">
-          <img src="instagram.webp" alt="Instagram" class="round-logo" width="40" height="40">
+          <img src="instagram.webp" alt="Instagram" width="40" height="40">
         </a>
       </div>
     </div>
