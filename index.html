@@ -6,7 +6,7 @@
   <title>UI UX Designer Bayezid</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: roboto flex;
       margin: 0;
       padding: 0;
       line-height: 1.6;
@@ -49,33 +49,34 @@
     }
 
     .mobile-designs {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 40px;
+      margin-top: 2rem;
       padding-left: 120px;
       padding-right: 120px;
     }
 
-    .mobile-designs .mobile-app {
-      width: 100%;
-      max-width: 100%;
+    .mobile-app-large {
+      width: calc(100% - 240px); /* Full width minus 120px padding on both sides */
+      margin: 0 auto;            /* Center horizontally */
+      display: block;            /* Ensure it behaves like a block element */
     }
 
-    .mobile-designs img {
+    .mobile-app-large img {
       width: 100%;
       height: auto;
       border-radius: 10px;
     }
 
-    .mobile-designs .mobile-app-large {
-      max-width: 100%;
-      margin-bottom: 40px;
+    .mobile-app-small-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 20px;
     }
 
-    .mobile-designs .mobile-app-small {
-      width: 48%;
-      max-width: 300px;
+    .mobile-app-small img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
     }
 
     .website-designs {
@@ -139,7 +140,6 @@
       margin-left: auto;
       margin-right: auto;
     }
-
   </style>
 </head>
 <body>
@@ -151,20 +151,24 @@
   <section>
     <h2 style="text-align:center;">Mobile App Designs</h2>
     <div class="mobile-designs">
-      <div class="mobile-app mobile-app-large">
+      <!-- Full-width design -->
+      <div class="mobile-app-large">
         <img src="appdesign1.jpg" alt="Mobile App Design 1">
       </div>
-      <div class="mobile-app mobile-app-small">
-        <img src="appdesign2.jpeg" alt="Mobile App Design 2">
-      </div>
-      <div class="mobile-app mobile-app-small">
-        <img src="appdesign3.jpeg" alt="Mobile App Design 3">
-      </div>
-      <div class="mobile-app mobile-app-small">
-        <img src="appdesign4.jpeg" alt="Mobile App Design 4">
-      </div>
-      <div class="mobile-app mobile-app-small">
-        <img src="appdesign5.jpg" alt="Mobile App Design 5">
+      <!-- Two designs per row -->
+      <div class="mobile-app-small-container">
+        <div class="mobile-app-small">
+          <img src="appdesign2.jpeg" alt="Mobile App Design 2">
+        </div>
+        <div class="mobile-app-small">
+          <img src="appdesign3.jpeg" alt="Mobile App Design 3">
+        </div>
+        <div class="mobile-app-small">
+          <img src="appdesign4.jpeg" alt="Mobile App Design 4">
+        </div>
+        <div class="mobile-app-small">
+          <img src="appdesign5.jpg" alt="Mobile App Design 5">
+        </div>
       </div>
     </div>
   </section>
@@ -183,7 +187,7 @@
 
   <section class="intro">
     <img src="Bayezid.png" alt="Bayezid" class="profile-image">
-    <p>My name is Bayezid. I'm from Bangladesh, and I specialize in mobile app and website UI/UX design. I have designed more than 1,000+ app screens. If you are looking for someone who can help you create the user interface you envision, your last destination is here.</p>
+    <p>My name is Bayezid. I'm from Bangladesh, and I specialize in mobile app and website UI/UX design. I have designed more than 1,000+ app screens. If you are looking for someone who can help you with UI/UX, I am here to help!</p>
     <p><strong>Important:</strong> I use Figma UI kit components to design pixel-perfect UI, which makes it easy for developers.</p>
     <p>I am excited and eager to work with you!</p>
   </section>
