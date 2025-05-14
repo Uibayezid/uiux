@@ -252,5 +252,56 @@
     </div>
   </footer>
 
+  <!-- Penguin Chatbot START -->
+<style>
+  #chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-image: url('https://emojiapi.dev/api/v1/1f427.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 36px;
+  }
+
+  #chatbot-iframe {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 340px;
+    height: 460px;
+    border: none;
+    border-radius: 12px;
+    display: none;
+    z-index: 9999;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
+</style>
+
+<button id="chatbot-toggle" title="Chat with Penguin!"></button>
+
+<iframe id="chatbot-iframe" src="https://chatbot-penguin.vercel.app" allowtransparency="true"></iframe>
+
+<script>
+  const toggleBtn = document.getElementById('chatbot-toggle');
+  const iframe = document.getElementById('chatbot-iframe');
+
+  toggleBtn.addEventListener('click', () => {
+    if (iframe.style.display === 'none' || iframe.style.display === '') {
+      iframe.style.display = 'block';
+    } else {
+      iframe.style.display = 'none';
+    }
+  });
+</script>
+<!-- Penguin Chatbot END -->
 </body>
 </html>
